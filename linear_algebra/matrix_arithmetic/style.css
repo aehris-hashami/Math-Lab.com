@@ -19,6 +19,16 @@ h1 {
   letter-spacing: 1px;
 }
 
+h2 {
+    color: #0066cc;
+    font-size: 2rem;
+    margin: 20px 0 10px 0;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    letter-spacing: 0.5px;
+}
+
+
 /* ===== Matrix Styles ===== */
 
 .matrix_equation{
@@ -91,9 +101,9 @@ h1 {
 .dot_product {
     display: flex;
     flex-direction: row;
-    align-items: center;   /* vertical centering */
-    justify-content: center; /* horizontal centering */
-    margin: 15px 0; /* some spacing between products */
+    align-items: center; 
+    justify-content: center; 
+    margin: 15px 0; 
 }
 
 .bigBrackets {
@@ -158,4 +168,29 @@ body::before {
       font-size: 150px;
     }
   }
+}
+
+button {
+    background-color: #0080ff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    background-color: #0059b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 4px rgba(0,0,0,0.1);
 }
