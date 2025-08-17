@@ -65,3 +65,15 @@ a[href="../index.html"]:hover {
   color: white;
   transform: scale(1.05);
 }
+
+
+.coming-soon {
+    color: #999;
+    font-style: italic;
+    cursor: not-allowed;
+    text-decoration: none;
+}
+
+.coming-soon:hover {
+    color: #999; /* prevent hover color change */
+}
