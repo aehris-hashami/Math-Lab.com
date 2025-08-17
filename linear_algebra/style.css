@@ -75,5 +75,5 @@ a[href="../index.html"]:hover {
 }
 
 .coming-soon:hover {
-    color: #999; /* prevent hover color change */
+    color: #999; 
 }
