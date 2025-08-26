@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Matrix Arithmetic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <h1>Matrix Arithmetix</h1>
+
+  <h2>Matrix Addition and Subtraction</h2>
+
+<!-- matrix addition -->
+
+  <button onclick="matrix_addition()">Start Animation</button>
+
+  <div class="matrix_equation" id="addition">
+
+    <div class="matrix_2x2 matA">
+      <div class="Brackets">[</div>
+      <div class="elements_2x2_container">
+        <div class="number">3</div> <div class="number">2</div> 
+        <div class="number">5</div> <div class="number">3</div> 
+      </div>
+      <div class="Brackets">]</div>
+    </div>
+
+    <div class="symbol">+</div>
+
+      <div class="matrix_2x2 matB">
+        <div class="Brackets">[</div>
+        <div class="elements_2x2_container">
+          <div class="number">1</div> <div class="number">3</div>
+          <div class="number">2</div> <div class="number">1</div>
+        </div>
+        <div class="Brackets">]</div>
+      </div>
+
+    <div class="symbol">=</div>
+      
+      <div class="matrix_2x2 matC">
+        <div class="Brackets">[</div>
+        <div class="elements_2x2_container">
+          <div class="number">4</div> <div class="number">5</div>
+          <div class="number">7</div> <div class="number">4</div>
+        </div>
+        <div class="Brackets">]</div>
+      </div>
+
+  </div>
+
+
+<!-- matrix Subtraction -->
+  <button onclick="matrix_subtraction()">Start Animation</button>
+
+
+  <div class="matrix_equation" id="subtraction">
+
+    <div class="matrix_2x2 matA">
+      <div class="Brackets">[</div>
+      <div class="elements_2x2_container">
+        <div class="number">3</div> <div class="number">2</div> 
+        <div class="number">5</div> <div class="number">3</div> 
+      </div>
+      <div class="Brackets">]</div>
+    </div>
+
+    <div class="symbol">-</div>
+
+      <div class="matrix_2x2 matB">
+        <div class="Brackets">[</div>
+        <div class="elements_2x2_container">
+          <div class="number">1</div> <div class="number">3</div>
+          <div class="number">2</div> <div class="number">1</div>
+        </div>
+        <div class="Brackets">]</div>
+      </div>
+
+    <div class="symbol">=</div>
+      
+      <div class="matrix_2x2 matC">
+        <div class="Brackets">[</div>
+        <div class="elements_2x2_container">
+          <div class="number">2</div> <div class="number">-1</div>
+          <div class="number">3</div> <div class="number">2</div>
+        </div>
+        <div class="Brackets">]</div>
+      </div>
+
+  </div>
+
+  <h2>Matrix Multiplication</h2>
+
+  <button onclick="mat_multiply()">Start Animation</button>
+
+  
+  <div class="matrix_equation">
+
+    <!-- matrix A -->
+
+    <div class="matrix_2x2">
+      <div class="Brackets">[</div>
+    <div class="elements_2x2_container">
+      <div class="number">1</div> <div class="number">2</div>
+      <div class="number">3</div> <div class="number">4</div>
+    </div>
+    <div class="Brackets">]</div>
+    
+    </div>
+
+    <!-- matrix B -->
+
+    <div class="matrix_2x2">
+      <div class="Brackets">[</div>
+      <div class="elements_2x2_container">
+        <div class="number">4</div> <div class="number">5</div>
+        <div class="number">7</div> <div class="number">6</div>
+      </div>
+      <div class="Brackets">]</div>
+    </div>
+
+  </div>
+
+  <br>
+  <div class="symbol">=</div> 
+  <br>
+
+  <!-- Product in form of dot products -->
+
+  <div class="matrix_equation">  
+    <div class="bigBrackets">[</div>
+    <div class="container_2x2">
+
+      <div class="dot_product">
+
+        <div class="vector">
+          <div class="Brackets">[</div>
+          <div class="component_container">
+            <div class="component">1</div> <div class="component">2</div>
+          </div>
+          <div class="Brackets">]</div>
+        </div>
+        
+        <div class="symbol">.</div>
+
+        <div class="vector">
+          <div class="Brackets">[</div>
+          <div class="component_container">
+            <div class="component">5</div> <div class="component">7</div>
+          </div>
+            <div class="Brackets">]</div>
+        </div>
+
+      </div>
+      <div class="dot_product">
+        
+        <div class="vector">
+          <div class="Brackets">[</div> 
+          <div class="component_container">
+            <div class="component">1</div> <div class="component">2</div>
+          </div>
+          <div class="Brackets">]</div>
+        </div>
+
+        <div class="symbol">.</div>
+        
+        <div class="vector">
+          <div class="Brackets">[</div> 
+          <div class="component_container">
+            <div class="component">6</div> <div class="component">8</div>
+          </div>
+          <div class="Brackets">]</div>
+        </div>
+        
+      </div>
+      
+      <div class="dot_product">
+        
+        <div class="vector">
+          <div class="Brackets">[</div> 
+          <div class="component_container">
+            <div class="component">3</div> <div class="component">4</div>
+          </div>
+          <div class="Brackets">]</div>
+        </div>
+        
+        <div class="symbol">.</div>
+
+        <div class="vector">
+          <div class="Brackets">[</div> 
+          <div class="component_container">
+            <div class="component">5</div> <div class="component">7</div>
+          </div>
+          <div class="Brackets">]</div>
+        </div>
+        
+      </div>
+      
+      <div class="dot_product">
+        
+        <div class="vector">
+          <div class="Brackets">[</div> 
+          <div class="component_container">
+            <div class="component">3</div> <div class="component">4</div>
+          </div>
+          <div class="Brackets">]</div>
+        </div>
+        
+        <div class="symbol">.</div>
+
+        <div class="vector">
+          <div class="Brackets">[</div> 
+          <div class="component_container">
+            <div class="component">6</div> <div class="component">8</div>
+          </div>
+          <div class="Brackets">]</div>
+        </div>
+        
+      </div> 
+      
+    </div>
+    <div class="bigBrackets">]</div>
+  </div>
+
+  <br>
+  <div class="symbol">=</div>
+  <br>
+
+  <div class="matrix_2x2">
+    <div class="bigBrackets">[</div>
+    <div class="container_2x2">
+      <div class="number">(1x2+3x4)</div> <div class="number">(1x2+3x4)</div>
+      <div class="number">(1x2+3x4)</div> <div class="number">(1x2+3x4)</div>
+    </div>
+    <div class="bigBrackets">]</div>
+  </div>
+
+    <br>  
+    <div class="symbol">=</div>
+    <br>  
+
+
+    <div class="matrix_2x2">
+      <div class="Brackets">[</div>
+      <div class="elements_2x2_container"> 
+        <div class="number">2</div> <div class="number">2</div>
+        <div class="number">2</div> <div class="number">2</div>
+      </div>
+      <div class="Brackets">]</div>
+    </div>
+  </div>
+  
+  <!-- SVG with two shapes (paths) -->
+  <svg width="200" height="200" viewBox="0 0 200 200">
+    <path id="shape1" d="M50,50 C50,10 150,10 150,50 C150,90 50,90 50,50 Z" />
+    <path id="shape2" d="M50,150 C50,110 150,110 150,150 C150,190 50,190 50,150 Z" />
+  </svg>
+  
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.9/dist/kute.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.9/dist/kute-svg.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
